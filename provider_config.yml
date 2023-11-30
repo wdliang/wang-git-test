@@ -5,10 +5,8 @@ spring:
 ---
 server:
   port: 1004
-  servlet:
-    context-path: /
+  context-path: /
   
-# Êı¾İÔ´ÅäÖÃ
 spring:
   profiles: dev
   application: 
@@ -18,31 +16,29 @@ spring:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521:orcl
     username: system
-    password: java   
-    
+    password: java
+     
 eureka:
   instance:
-    hostname: localhost  #eureka¿Í»§¶ËÖ÷»úÊµÀıÃû³Æ
-    appname: microservice-student  #¿Í»§¶Ë·şÎñÃû
-    instance-id: microservice-student:1004 #¿Í»§¶ËÊµÀıÃû³Æ
-    prefer-ip-address: true #ÏÔÊ¾IP
+    hostname: localhost  #eurekaå®¢æˆ·ç«¯ä¸»æœºå®ä¾‹åç§°
+    appname: microservice-student  #å®¢æˆ·ç«¯æœåŠ¡å
+    instance-id: microservice-student:1004 #å®¢æˆ·ç«¯å®ä¾‹åç§°
+    prefer-ip-address: true #æ˜¾ç¤ºIP
   client: 
     service-url: 
-      defaultZone: http://localhost:2004/eureka   #°Ñ·şÎñ×¢²áµ½eureka×¢²áÖĞĞÄ
+      defaultZone: http://localhost:2004/eureka   #æŠŠæœåŠ¡æ³¨å†Œåˆ°eurekaæ³¨å†Œä¸­å¿ƒ
        
 info: 
    groupId: $project.groupId$
    artifactId: $project.artifactId$
    version: $project.version$
-   ¸ºÔğÈË: ÕÅÈı
-   ÁªÏµµç»°: 110
+   head: å¼ ä¸‰
+   phone: 110
 ---
 server:
   port: 1004
-  servlet:
-    context-path: /
+  context-path: /
   
-# Êı¾İÔ´ÅäÖÃ
 spring:
   profiles: test
   application: 
@@ -53,20 +49,20 @@ spring:
     url: jdbc:oracle:thin:@localhost:1521:orcl
     username: system
     password: java
-       
+     
 eureka:
   instance:
-    hostname: localhost  #eureka¿Í»§¶ËÖ÷»úÊµÀıÃû³Æ
-    appname: microservice-student  #¿Í»§¶Ë·şÎñÃû
-    instance-id: microservice-student:1004 #¿Í»§¶ËÊµÀıÃû³Æ
-    prefer-ip-address: true #ÏÔÊ¾IP
+    hostname: localhost  #eurekaå®¢æˆ·ç«¯ä¸»æœºå®ä¾‹åç§°
+    appname: microservice-student  #å®¢æˆ·ç«¯æœåŠ¡å
+    instance-id: microservice-student:1004 #å®¢æˆ·ç«¯å®ä¾‹åç§°
+    prefer-ip-address: true #æ˜¾ç¤ºIP
   client: 
     service-url: 
-      defaultZone: http://localhost:2004/eureka   #°Ñ·şÎñ×¢²áµ½eureka×¢²áÖĞĞÄ
+      defaultZone: http://localhost:2004/eureka   #æŠŠæœåŠ¡æ³¨å†Œåˆ°eurekaæ³¨å†Œä¸­å¿ƒ
        
 info: 
    groupId: $project.groupId$
    artifactId: $project.artifactId$
    version: $project.version$
-   ¸ºÔğÈË: ÕÅÈı
-   ÁªÏµµç»°: 110
+   head: å¼ ä¸‰
+   phone: 110
